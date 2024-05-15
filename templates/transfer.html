@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transfer Equipment</title>
+</head>
+<body>
+    <h2>Transfer Equipment</h2>
+    <form action="{{ url_for('transfer') }}" method="post">
+        <label for="destination">Destination:</label>
+        <input type="text" id="destination" name="destination" required><br><br>
+        <input type="submit" value="Transfer Et">
+    </form>
+    <br>
+    <a href="{{ url_for('home') }}">Back to Home</a>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transfer Equipment</title>
+</head>
+<body>
+    <h1>Transfer Equipment</h1>
+
+    <form action="/process_transfer" method="post">
+        <label for="equipment_name">Equipment Name:</label>
+        <input type="text" id="equipment_name" name="equipment_name" required><br><br>
+
+        <label for="from_location">From Location:</label>
+        <input type="text" id="from_location" name="from_location" required><br><br>
+
+        <label for="to_location">To Location:</label>
+        <input type="text" id="to_location" name="to_location" required><br><br>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
+ -->

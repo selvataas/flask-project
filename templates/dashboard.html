@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard</title>
+</head>
+<body>
+    <h1>Dashboard</h1>
+    <h2>Ekipman Transferi</h2>
+    <form method="POST" action="/transfer">
+        <label for="ekipman_id">Ekipman:</label>
+        <select id="ekipman_id" name="ekipman_id">
+            {% for ekipman in ekipmanlar %}
+            <option value="{{ ekipman.Eid }}">{{ ekipman.ETur }} - {{ ekipman.EPlaka }}</option>
+            {% endfor %}
+        </select><br>
+        
+        <label for="yukleme_noktasi">Yükleme Noktası:</label>
+        <select id="yukleme_noktasi" name="yukleme_noktasi">
+            {% for yn in yukleme_noktalari %}
+            <option value="{{ yn.YNid }}">{{ yn.YNTur }} - {{ yn.YNAdres }}</option>
+            {% endfor %}
+        </select><br>
+        
+        <label for="hedef_noktasi">Hedef Noktası:</label>
+        <select id="hedef_noktasi" name="hedef_noktasi">
+            {% for hn in hedef_noktalari %}
+            <option value="{{ hn.HNid }}">{{ hn.HNTur }} - {{ hn.HNAdres }}</option>
+            {% endfor %}
+        </select><br>
+        
+        <input type="submit" value="Transfer">
+    </form>
+    
+     <a href="/logout">Çıkış Yap</a>
+    
+</body>
+</html>
