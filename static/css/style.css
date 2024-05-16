@@ -17,8 +17,14 @@ a {
 
 container {
     text-align: center;
-    margin-top: 50px;
+    margin-top: 250px;
 }
+
+.form-container{
+    display: inline-block;
+    text-align: left;
+}
+
 
 .welcome {
     margin-bottom: 20px;
@@ -35,6 +41,11 @@ container {
     margin: 0 30px;
 }
 
+.logout{
+    position: fixed;
+    top: 10px;
+    right: 10px;
+}
 
 .button {
     display: inline-block;
